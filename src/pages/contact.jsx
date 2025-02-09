@@ -25,6 +25,7 @@ const Form = () => {
         } else {
             setMessage(inputValue)
         }
+        //THE ABOVE SAY THAT IF WE ARE IN THE INPUT FIELD THAT IS NAMED EMAIL FROM THE EVENT, THEM THE INPUTVALUE WILL BE TIED TO THAT INPUT FIELD.
     }
 
     const handleFormSubmit = (e) => {
@@ -41,7 +42,7 @@ const Form = () => {
         }
 
         if (setName(name) && !setEmail(email) && setMessage(message)) {
-            setErrorMessage('Email Address required')
+            setErrorMessage('Email address required')
             return
         }
         setName('')
@@ -49,7 +50,7 @@ const Form = () => {
         setMessage('')
     }
     return (
-        <section>
+        <section className='contact-background'>
             <h2>Contact</h2>
             <form className="form" onSubmit={handleFormSubmit}>
                 <input

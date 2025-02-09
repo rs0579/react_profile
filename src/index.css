@@ -1,4 +1,56 @@
-:root {
+:root{
+    --mainBlue: rgb(4, 4, 131);
+    --headerColor: aliceblue;
+
+}
+header {
+  background-color: #242424;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaYXsmB0L1YC0ROJlu57xWEfOSLuT8wOHVQ&s);
+  background-size: cover;
+  width: 100%;
+}
+header ul li {
+  text-align: right;
+  color: white;
+}
+h2{
+  color: aliceblue;
+
+}
+.form {
+
+}
+
+.form input {
+  align-content: start;
+
+}
+
+.contact-background{
+  background-color: var(--mainBlue);
+}
+
+.nav-item:active {
+  border-color: rgb(63, 63, 121);
+  border-radius: 15px;
+}
+main{
+  background-color: var(--mainBlue);
+}
+main .porfolio-main{
+  background-color: var(--mainBlue);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer{
+  align-items: center;
+  background-color: var(--mainBlue);
+}
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -12,7 +64,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+z
 a {
   font-weight: 500;
   color: #646cff;
@@ -65,4 +117,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
