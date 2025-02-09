@@ -1,0 +1,89 @@
+import { useState } from 'react'
+
+
+const Form = () => {
+    // Create state variables for the fields in the form
+    // We are also setting their initial values to an empty string
+    //THESE STATE VARIABLES SETS THE STATE OF THE INPUT AREAS AS EMPTY.
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const [errorMessage, setErrorMessage] = useState('')
+
+    const handleInputChange = (e) => {
+        //THIS DESTRUCTURES THE TARGET FROM HE EVENT
+        const { target } = e
+        //THIS CREATES A VARIABLE THAT CONTAINS THE TARGET.NAME AND THE TARGET.VALUE. 
+        const inputType = target.name
+        const inputValue = target.value
+
+        if (inputType === 'email') {
+            setEmail(inputValue)
+        } else if (inputValue === 'name') {
+            setName(inputValue)
+        } else {
+            setMessage(inputValue)
+        }
+    }
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+
+        if (setName(name) && setEmail(email) && !setMessage(message)) {
+            setErrorMessage('Message data required')
+            return
+        }
+
+        if (!setName(name) && setEmail(email) && setMessage(message)) {
+            setErrorMessage('Name data required')
+            return
+        }
+
+        if (setName(name) && !setEmail(email) && setMessage(message)) {
+            setErrorMessage('Email Address required')
+            return
+        }
+        setName('')
+        setEmail('')
+        setMessage('')
+    }
+    return (
+        <section>
+            <h2>Contact</h2>
+            <form className="form" onSubmit={handleFormSubmit}>
+                <input
+                    type="text"
+                    value={name}
+                    name='name'
+                    onChange={handleInputChange}
+                    placeholder='Name'
+                />
+                <input
+                    type="email"
+                    value={email}
+                    name='email'
+                    onChange={handleInputChange}
+                    placeholder='Email'
+                />
+                <input
+                    type="textarea"
+                    value={message}
+                    name='message'
+                    onChange={handleInputChange}
+                    placeholder='Enter text here'
+                />
+                <button type="submit">Submit</button>
+            </form>
+            {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+            )}
+        </section>
+
+    )
+
+}
+
+export default Form
