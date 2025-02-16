@@ -1,12 +1,12 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import About from './pages/About';
-import Contact from './pages/contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
-import Error from './pages/Error'; 
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import App from './App'
+import About from './pages/About'
+import Contact from './pages/contact'
+import Portfolio from './pages/Portfolio'
+import Resume from './pages/Resume'
+import Error from './pages/Error'
 
 
 const router = createBrowserRouter([
@@ -37,49 +37,8 @@ const router = createBrowserRouter([
       },
     ]
   }
-]);
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
-);
-
-
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import ReactDOM from 'react-dom/client'
-// import './index.css'
-// import App from './App'
-// import About from './pages/About'
-// import Contact from './pages/contact'
-// import Portfolio from './pages/Portfolio'
-// import Resume from './pages/Resume'
-
-// const router = createBrowserRouter([
-//   {
-//     path: '/about',
-//     element: <About />,
-//     errorElement: <Error />,
-//     children: [
-//       {
-//         index: true,
-//         element: <App />
-//       },
-//       {
-//         path: '/profile',
-//         element: <Portfolio />
-//       },
-//       {
-//         path: '/resume',
-//         element: <Resume />
-//       },
-//       {
-//         path: '/contact',
-//         element: <Contact />
-//       },
-
-//     ]
-//   }
-// ])
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <RouterProvider router={router} />
-// );
+)
