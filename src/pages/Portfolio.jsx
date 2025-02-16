@@ -1,6 +1,6 @@
 import Project from "../components/Project"
 const Portfolio = () => {
-    return(
+    return (
         <Project />
     )
 }

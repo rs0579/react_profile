@@ -7,7 +7,7 @@ export default function About(){
         <h1>About Me</h1>
         <img 
         className="about-img"
-        src="./src/assets/IMG-20231227-WA0022.jpg" 
+        src="../assets/IMG-20231227-WA0022.jpg" 
         alt="Castellfollit de la Roca" />
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas corporis impedit optio accusamus doloremque quod repellat deleniti labore, incidunt officiis dicta natus aut tenetur, aliquam dolorem adipisci assumenda nisi.
