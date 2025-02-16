@@ -1,32 +1,46 @@
-:root{
-    --mainBlue: rgb(4, 4, 131);
-    --headerColor: aliceblue;
+:root {
+  --mainBlue: rgb(20, 20, 46);
+  --headerColor: aliceblue;
 
 }
+
 header {
-  background-color: #242424;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaYXsmB0L1YC0ROJlu57xWEfOSLuT8wOHVQ&s);
+  background-color: var(--mainBlue);
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaYXsmB0L1YC0ROJlu57xWEfOSLuT8wOHVQ&s); */
   background-size: cover;
   width: 100%;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
 header ul li {
   text-align: right;
   color: white;
+  display: inline;
+  text-decoration: none;
+  font-size: larger;
+  
+
 }
-h2{
+
+h2 {
   color: aliceblue;
 
 }
-.form {
 
-}
+.form {}
 
 .form input {
   align-content: start;
 
 }
 
-.contact-background{
+.contact-background {
   background-color: var(--mainBlue);
 }
 
@@ -34,18 +48,35 @@ h2{
   border-color: rgb(63, 63, 121);
   border-radius: 15px;
 }
-main{
+
+main {
   background-color: var(--mainBlue);
 }
-main .porfolio-main{
+
+main .porfolio-main {
   background-color: var(--mainBlue);
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-footer{
-  align-items: center;
+
+footer {
+  display: flexbox;
+  justify-content: center;
   background-color: var(--mainBlue);
+}
+footer a img {
+  justify-content: center;
+  height: 20px;
+  width: 10px;
+
+}
+footer a img:hover{
+}
+.hover-overlay .mask{
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  background-color: hsla(195, 83%, 58%, 0.2)
 }
 
 

@@ -1,28 +1,31 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import './index.css'
-import App from './App'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Portfolio from './pages/Portfolio'
-import Resume from './pages/Resume'
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import About from './pages/About';
+import Contact from './pages/contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Error from './pages/Error'; 
+
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <App />, // This will be the main layout
     errorElement: <Error />,
     children: [
       {
-        index: true,
-        element: <Homepage />
-      },
-      {
-        path: 'profile',
-        element: <Portfolio />
-      },
-      {
-        path: 'about',
+        index: true, // This makes the index route render the About component
         element: <About />
+      },
+      {
+        path: 'about', // This is the /about route
+        element: <About />
+      },
+      {
+        path: 'portfolio',
+        element: <Portfolio />
       },
       {
         path: 'resume',
@@ -32,11 +35,51 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <Contact />
       },
-
     ]
   }
-])
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
+
+
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import ReactDOM from 'react-dom/client'
+// import './index.css'
+// import App from './App'
+// import About from './pages/About'
+// import Contact from './pages/contact'
+// import Portfolio from './pages/Portfolio'
+// import Resume from './pages/Resume'
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/about',
+//     element: <About />,
+//     errorElement: <Error />,
+//     children: [
+//       {
+//         index: true,
+//         element: <App />
+//       },
+//       {
+//         path: '/profile',
+//         element: <Portfolio />
+//       },
+//       {
+//         path: '/resume',
+//         element: <Resume />
+//       },
+//       {
+//         path: '/contact',
+//         element: <Contact />
+//       },
+
+//     ]
+//   }
+// ])
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <RouterProvider router={router} />
+// );
