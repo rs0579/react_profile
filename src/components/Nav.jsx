@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 // import { createContext } from 'react'
+import "./nav.css"
 
 // export const NavContext = createContext()
 
@@ -29,10 +30,10 @@ const Nav = () => {
                 </li>
                 <li className='nav-item'>
                     <Link
-                        to="/Profile"
-                        className={currentPage === "/Profile" ? "nav-link active" : "nav-link"}
+                        to="/portfolio"
+                        className={currentPage === "/portfolio" ? "nav-link active" : "nav-link"}
                     >
-                        Profile
+                        Portfolio
 
                     </Link>
                 </li>

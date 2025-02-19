@@ -1,4 +1,4 @@
-export const Project = () => {
+const Project = () => {
     const projects = [
         {
             id: "item-one",
@@ -40,6 +40,7 @@ export const Project = () => {
 
     const handleClick = (link) => {
         window.open(link, "_blank");
+        //"_blank" opens new tab instead of opening it directly on the current page
     };
 
     return (
@@ -57,3 +58,4 @@ export const Project = () => {
         </main>
     )
 }
+export default Project
