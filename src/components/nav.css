@@ -1,0 +1,10 @@
+header ul li {
+    text-align: right;
+    color: white;
+    display: inline;
+    text-decoration: none;
+    font-size: larger;
+  }
+  li{
+    text-decoration: none;
+  }

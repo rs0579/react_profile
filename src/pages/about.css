@@ -1,0 +1,12 @@
+.about-img{
+    border-radius: 50%;
+    height: 114px;
+    width: 110px;
+}
+.about-div{
+    height: 90vh;
+
+}
+.about-text{
+    display: inline;
+}

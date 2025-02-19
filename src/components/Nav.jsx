@@ -13,19 +13,10 @@ const Nav = () => {
             <ul className='nav nav-tabs'>
                 <li className='nav-item'>
                     <Link
-                        to='/'
-                        className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-                    //TO= THIS SET THE "/" TO THE HOMEPAGE - CLASSnAME= IS A TERNARY OPERATOR THAT CHECKS IF THE CURRENT PAGE IS THAT HOMEPAGE I.E. "/". IF IT IS THEN NAV-LINK ACTIVE IS TRUE OTHERWISE, NAV-LINK IS.
-                    >
-                        Home
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link
                         to="/About"
                         className={currentPage === "/About" ? "nav-link active" : "nav-link"}
                     >
-                        About Me
+                        About
                     </Link>
                 </li>
                 <li className='nav-item'>
