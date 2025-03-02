@@ -50,6 +50,7 @@ const Contact = () => {
             <h2>Contact</h2>
             <form className="form" onSubmit={handleFormSubmit}>
                 <input
+                className='contact-input'
                     type="text"
                     value={name}
                     name='name'
@@ -57,6 +58,8 @@ const Contact = () => {
                     placeholder='Name'
                 />
                 <input
+                 className='contact-input'
+                 id='email'
                     type="email"
                     value={email}
                     name='email'
@@ -64,6 +67,7 @@ const Contact = () => {
                     placeholder='Email'
                 />
                 <textarea
+                id='textarea'
                     value={message}
                     name='message'
                     onChange={handleInputChange}

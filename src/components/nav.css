@@ -1,10 +1,12 @@
-header ul li {
+ul li {
     text-align: right;
     color: white;
     display: inline;
     text-decoration: none;
     font-size: larger;
+    justify-items: space-between;
+    justify-content: space-evenly;
   }
-  li{
-    text-decoration: none;
+  ul li:hover{
+    background-size: 100% 100%;
   }
