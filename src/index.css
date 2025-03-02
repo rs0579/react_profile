@@ -49,6 +49,13 @@ main .porfolio-main {
   text-align: left;
   margin-top: 2em;
 }
+.about-div{
+  text-align: justify;
+  text-justify: inter-word;
+}
+span{
+  font-style: italic;
+}
 footer {
   background-color: var(--mainBlue);
   text-align: center;
@@ -134,7 +141,6 @@ display: flex;
   text-decoration: none;
   justify-content: space-around;
 }
-
 .header-nav{
   display: flex;
   flex-direction: row;
