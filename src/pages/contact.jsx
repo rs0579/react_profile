@@ -50,7 +50,7 @@ const Contact = () => {
             <h2>Contact</h2>
             <form className="form" onSubmit={handleFormSubmit}>
                 <input
-                className='contact-input'
+                className='contact-input' id='contact-name'
                     type="text"
                     value={name}
                     name='name'

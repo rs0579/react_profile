@@ -12,10 +12,6 @@ body{
   margin: 0;
 
 }
-.form input {
-  align-content: start;
-
-}
 
 .contact-background {
   background-color: var(--mainBlue);
@@ -61,11 +57,13 @@ footer {
   border-top: 3px solid var(--borderColor);
   bottom: 0;
   margin-bottom: 0px;
+  overflow: hidden;
 }
 .footer-container .icon {
   gap: 1em;
   height: 3em;
   background-color: var(--mainBlue);
+  overflow: hidden;
 }
 .icon:hover{
   background-color: rgba(182, 235, 97, 0.842);
@@ -112,4 +110,61 @@ section img {
 }
 #email{
   margin: 10px 0px 10px 0px;
+}
+.main-resume {
+height: 100vh;
+width: 100vw;
+display: flex;
+}
+.resume-text {
+  color: aliceblue;
+  font-size: 1.5em;
+  text-align: left;
+  margin-top: 2em;
+  display: block;
+  margin-top: 5em;
+}
+.resume-section {
+  display: flex;
+}
+.resume-ul{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  text-decoration: none;
+  color: aliceblue;
+  justify-content: space-around;
+}
+.contact-background{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.contact-input{
+  display: block;
+  padding: 10px;
+  width: 200%;
+  margin-top: 1em;
+}
+#textarea{
+  display: block;
+  padding: 10px;
+  width: 200%;
+  height: 250px;
+}
+form{
+  display: block;
+  margin-top: 5em;
+}
+button {
+  display: block;
+  margin-top: 1em;
 }

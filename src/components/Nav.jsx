@@ -10,7 +10,7 @@ const Nav = () => {
     return (
         <>
             <h1 id="header-title">Raheem Senegal</h1>
-            <ul className='nav nav-tabs'>
+            <ul className='header-nav'>
                 <li className='nav-item'>
                     <Link
                         to="/About"
