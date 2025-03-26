@@ -2,6 +2,7 @@
   --mainBlue: rgb(20, 20, 46);
   --headerColor: aliceblue;
   --borderColor: rgb(32, 24, 24);
+  --mainMatteBlack: rgb(40, 40, 43);
 }
 
 h2 {
@@ -14,7 +15,7 @@ body{
 }
 
 .contact-background {
-  background-color: var(--mainBlue);
+  background-color: var(--mainMatteBlack);
 }
 
 .nav-item:active {
@@ -23,16 +24,11 @@ body{
 }
 
 main {
-  background-color: var(--mainBlue);
-  /* background-color: black; */
+  background-color: rgb(40, 40, 43);
+  /* background-color: #280137; */
+  /* background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); */
 }
 
-main .porfolio-main {
-  background-color: var(--mainBlue);
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
 .about-img{
   border-radius: 50%;
   height: 114px;
@@ -58,7 +54,8 @@ span{
   font-style: italic;
 }
 footer {
-  background-color: var(--mainBlue);
+  /* background-color: var(--mainBlue); */
+  background-image: linear-gradient(147deg, #4B4E53 0%, #000000 74%);
   text-align: center;
   width: 100%;
   height: 3rem;
@@ -70,7 +67,6 @@ footer {
 .footer-container .icon {
   gap: 1em;
   height: 3em;
-  background-color: var(--mainBlue);
   overflow: hidden;
 }
 .icon:hover{
@@ -81,8 +77,6 @@ footer {
   border-radius: 50%;
   height: 114px;
   width: 110px;
-  /* margin: 0 auto;
-  display: block; */
 }
 .about-div{
   height: 850px;
@@ -95,11 +89,7 @@ footer {
   margin-top: 2em;
 }
 .portfolio-main {
-  /* height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
+
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -108,11 +98,7 @@ footer {
   box-sizing: border-box;
 }
 .portfolio-item{
-  /* height : 500px;
-  width: 500px;
-  transition: all 0.5s;
-  flex: 0 0 calc(50% - 10px);
-  margin-bottom: 20px; */
+  /* position: relative; */
   height : 500px;
   width: 100%;
   display: flex;
@@ -125,25 +111,36 @@ footer {
   height: 26em;
   object-fit: cover;
 }
+
 .overlay {
-  /* position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent black overlay */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  opacity: 1; */
-  /* background-color: black; */
-  height: 100%;
+  color: white; /* Make sure text is visible */
+  font-size: 1rem;
+  opacity: 1; /* Ensure the text is always visible */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay h2{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: black;
-  font-weight: bold;
+  font-size: 1em;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Optional hover effect */
+.portfolio-item:hover img {
+  filter: brightness(70%);
 }
 
 section img:hover{

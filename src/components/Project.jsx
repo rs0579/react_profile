@@ -2,6 +2,7 @@ import imageFive from "../assets/20190908_143633.jpg"
 import imageTwo from "../assets/20240323_165529.jpg"
 import imageSix from "../assets/20230914_180634.jpg"
 import imageOne from "../assets/20240625_172535.jpg"
+import imageThree from "../assets/20211030_163016.jpg"
 const Project = () => {
     const projects = [
         {
@@ -23,7 +24,8 @@ const Project = () => {
         {
             id: "item-three",
             link: "https://github.com/rs0579/README_generator",
-            imgSrc: "https://picsum.photos/id/163/2000/1333",
+            // imgSrc: "https://picsum.photos/id/163/2000/1333",
+            imgSrc: imageThree,
             altText: "Module 3",
             title: "ReadMe Generator"
         },
@@ -48,7 +50,7 @@ const Project = () => {
             // imgSrc: "https://picsum.photos/id/201/5000/3333",
             imgSrc: imageSix,
             altText: "Module 6",
-            text: 'Social Media API'
+            title: 'Social Media API'
         }
     ];
 
@@ -66,7 +68,10 @@ const Project = () => {
                             src={project.imgSrc}
                             alt={project.altText}
                         />
-                        <h2 className="overlay">{project.title}</h2>
+                        <div className="overlay">
+                            <h2>{project.title}</h2>
+                        </div>
+                        {/* <h2 className="overlay">{project.title}</h2> */}
                     </button>
                 </section>
             ))}

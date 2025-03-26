@@ -1,15 +1,13 @@
 import { Link, useLocation } from 'react-router-dom'
-// import { createContext } from 'react'
 import "./nav.css"
-
-// export const NavContext = createContext()
+import vicImage from "../assets/20231225_233950.jpg"
 
 const Nav = () => {
     const currentPage = useLocation().pathname
 
     return (
         <>
-            <h1 id="header-title">Raheem Senegal</h1>
+            <h1 id="header-title">Raheem S.</h1>
             <ul className='header-nav'>
                 <li className='nav-item'>
                     <Link
@@ -45,6 +43,11 @@ const Nav = () => {
                     </Link>
                 </li>
             </ul>
+            <img
+                className="nav-img"
+                src={vicImage}
+                alt="Vic"
+            />
         </>
 
     )
