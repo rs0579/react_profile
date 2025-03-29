@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import { ThemeProvider } from "@material-tailwind/react"
 import App from './App'
 import About from './pages/About'
 import Contact from './pages/contact'
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         element: <Portfolio />
       },
       {
-        path: 'resume',
+        path: 'technologies',
         element: <Resume />
       },
       {
@@ -40,5 +41,7 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <ThemeProvider>
+    <RouterProvider router={router} />
+  </ThemeProvider>
 )

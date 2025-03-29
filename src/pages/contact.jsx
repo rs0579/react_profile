@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from '@material-tailwind/react'
 
 const Contact = () => {
     const [name, setName] = useState('')
@@ -38,6 +39,11 @@ const Contact = () => {
             return
         }
 
+        // Construct mailto link
+        const mailtoLink = `raheemsenegal@outlook.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + "\n\nReply to: " + email)}`;
+        // Open default email client
+        window.location.href = mailtoLink;
+
         // Reset the form fields
         setName('')
         setEmail('')
@@ -47,10 +53,10 @@ const Contact = () => {
 
     return (
         <section className='contact-background'>
-            <h2>Contact</h2>
+            <h2 className='email-me-h2'>Email Me 😊</h2>
             <form className="form" onSubmit={handleFormSubmit}>
                 <input
-                className='contact-input' id='contact-name'
+                    className='contact-input' id='contact-name'
                     type="text"
                     value={name}
                     name='name'
@@ -58,8 +64,8 @@ const Contact = () => {
                     placeholder='Name'
                 />
                 <input
-                 className='contact-input'
-                 id='email'
+                    className='contact-input'
+                    id='email'
                     type="email"
                     value={email}
                     name='email'
@@ -67,13 +73,14 @@ const Contact = () => {
                     placeholder='Email'
                 />
                 <textarea
-                id='textarea'
+                    id='textarea'
                     value={message}
                     name='message'
                     onChange={handleInputChange}
                     placeholder='Enter text here'
                 />
-                <button type="submit">Submit</button>
+                {/* <button type="submit">Submit</button> */}
+                <Button variant="outlined" type="submit" className="rounded-full">Submit</Button>
             </form>
             {errorMessage && (
                 <div>

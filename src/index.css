@@ -3,6 +3,7 @@
   --headerColor: aliceblue;
   --borderColor: rgb(32, 24, 24);
   --mainMatteBlack: rgb(40, 40, 43);
+  --heroDarkPurple: #3e2b3c;
 }
 
 h2 {
@@ -14,21 +15,19 @@ body{
 
 }
 
-.contact-background {
-  background-color: var(--mainMatteBlack);
-}
-
 .nav-item:active {
   border-color: rgb(63, 63, 121);
   border-radius: 15px;
 }
 
 main {
-  background-color: rgb(40, 40, 43);
-  /* background-color: #280137; */
-  /* background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); */
+  background-color: #3e2b3c;
+  background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* background-image: url(https://images.unsplash.com/photo-1473163928189-364b2c4e1135?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+  overflow: hidden;
+  background-size: cover;
+  /* background-size: contain; */
 }
-
 .about-img{
   border-radius: 50%;
   height: 114px;
@@ -50,8 +49,14 @@ main {
   text-align: justify;
   text-justify: inter-word;
 }
-span{
+.about-section{
+  background-color: var(--mainMatteBlack);
+}
+/* span{
   font-style: italic;
+} */
+.show{
+  font-weight: bolder;
 }
 footer {
   /* background-color: var(--mainBlue); */
@@ -73,21 +78,6 @@ footer {
   background-color: rgba(182, 235, 97, 0.842);
 }
 
-.about-img{
-  border-radius: 50%;
-  height: 114px;
-  width: 110px;
-}
-.about-div{
-  height: 850px;
-
-}
-.about-text{
-  color: aliceblue;
-  font-size: 1.5em;
-  text-align: left;
-  margin-top: 2em;
-}
 .portfolio-main {
 
   width: 100%;
@@ -96,9 +86,10 @@ footer {
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
+  background-size: contain;
 }
 .portfolio-item{
-  /* position: relative; */
+  position: relative;
   height : 500px;
   width: 100%;
   display: flex;
@@ -113,7 +104,7 @@ footer {
 }
 
 .overlay {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -130,8 +121,9 @@ footer {
 
 .overlay h2{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
+  color: white;
   font-size: 1em;
+  padding-top: 23em;
 }
 
 .portfolio-item:hover .overlay {
@@ -178,7 +170,8 @@ display: flex;
   flex-direction: row;
   gap: 1em;
   text-decoration: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  
 }
 .header-nav{
   display: flex;
@@ -199,17 +192,94 @@ display: flex;
   width: 200%;
   margin-top: 1em;
 }
+.email-me-h2{
+  font-weight: bold;
+  padding-top: 2em;
+}
 #textarea{
   display: block;
   padding: 10px;
   width: 200%;
   height: 250px;
+  background-color: beige;
+
+}
+input{
+  background-color: beige;
 }
 form{
   display: block;
   margin-top: 5em;
 }
 button {
-  display: block;
+  /* display: block; */
   margin-top: 1em;
+}
+
+
+ul li {
+  text-align: right;
+  color: white;
+  display: inline;
+  text-decoration: none;
+  font-size: larger;
+  justify-items: space-between;
+  justify-content: space-evenly;
+}
+ul li:hover{
+  background-size: 100% 100%;
+}
+
+/* header {
+  background-image: linear-gradient(147deg, #4B4E53 0%, #000000 74%);
+    width: 100%;
+    border-bottom: 3px solid rgb(32, 24, 24);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  } */
+  
+  h1{
+    border-radius: 23%;
+    color: white;
+    margin-left: 1em;
+  }
+  .nav-img{
+    border-radius: 50%;
+    /* height: 96px;
+    width: 94px; */
+    height: 4.5em;
+    width: 5em;
+    border: solid #f0eade;
+    border-radius: 25px;
+  }
+  /* Ensure the nav items are also displayed in a row */
+.header-nav {
+  display: flex;
+  margin-right: 25em;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+.nav-item {
+  /* margin-right: 20px; Adds space between nav items */
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Change this to your desired color */
+}
+
+.nav-link.active {
+  font-weight: bold; /* Highlight the active link */
+}
+nav {
+  width: 100%;
+  /* overflow: hidden; */
 }

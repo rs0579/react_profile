@@ -1,5 +1,5 @@
-/* import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Avatar} from "@heroui/react"; */
-ul li {
+@import "tailwindcss";
+/* ul li {
     text-align: right;
     color: white;
     display: inline;
@@ -10,4 +10,4 @@ ul li {
   }
   ul li:hover{
     background-size: 100% 100%;
-  }
+  } */

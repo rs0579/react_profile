@@ -1,18 +1,18 @@
+
 export default function Resume() {
     return (
         <>
             <main className="main-resume">
-                <h2>Resume</h2>
+            <h2 className="email-me-h2">My Technologies 👨🏿‍💻:</h2>
                 <article>
                     <section>
                         <p className="resume-text">Frontend</p>
                         <ul className="resume-ul">
                             <li>HTML5</li>
-                            <li>CSS</li>
+                            <li>CSS4</li>
                             <li>Javascript</li>
-                            <li>Bootstrap</li>
-                            <li>ReactJS Framework</li>
-                            <li>HeroUI</li>
+                            <li>ReactJS</li>
+                            <li>Tailwind CSS</li>
                         </ul>
                     </section>
                     <section>
@@ -21,11 +21,12 @@ export default function Resume() {
                             <li>PostgresQL</li>
                             <li>NodeJs</li>
                             <li>TypeScript</li>
-                            <li>Express.js</li>
+                            <li>ExpressJS</li>
                             <li>MongoDB</li>
                             <li>RESTful API</li>
                             <li>GraphQL</li>
                             <li>Sequelize</li>
+                            <li>Python</li>
 
                         </ul>
                     </section>
