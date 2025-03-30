@@ -4,6 +4,9 @@
   --borderColor: rgb(32, 24, 24);
   --mainMatteBlack: rgb(40, 40, 43);
   --heroDarkPurple: #3e2b3c;
+  --slateGrey: #708090;
+  --niceTeal: #5F9EA0;
+  --warmBeige: #A89C94;
 }
 
 h2 {
@@ -21,45 +24,58 @@ body{
 }
 
 main {
-  background-color: #3e2b3c;
-  background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-color: var(--borderColor);
+  /* background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
   /* background-image: url(https://images.unsplash.com/photo-1473163928189-364b2c4e1135?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
   overflow: hidden;
-  background-size: cover;
-  /* background-size: contain; */
+  background-size: fit;
 }
 .about-img{
   border-radius: 50%;
   height: 114px;
   width: 110px;
+  margin-bottom: 1em;
   /* margin: 0 auto;
-  display: block; */
 }
 .about-div{
-  height: 850px;
+  /* height: 850px; */
+  height: 85em;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: center;
+  text-align: justify;
 
 }
 .about-text{
-  color: aliceblue;
-  font-size: 1.5em;
-  text-align: left;
-  margin-top: 2em;
-}
-.about-div{
+  color: white;
+  font-size: 1em;
   text-align: justify;
-  text-justify: inter-word;
 }
 .about-section{
-  background-color: var(--mainMatteBlack);
+  padding-bottom: 2em;
 }
-/* span{
-  font-style: italic;
-} */
+#about-section-one{
+  /* border-right: solid beige; */
+  border: solid #5a8486;
+  border-radius: 25px;
+  width: 38em;
+  background-color: #ffd25f;
+  color: black;
+  padding: 15px;
+}
+#about-section-two{
+  padding-left: 1em;
+  border-radius: 25px;
+  background-color: #5a8486;
+  width: 27em;
+  margin-left: 6em;
+  padding: 15px;
+  border: solid #ffd25f;
+}
 .show{
   font-weight: bolder;
 }
 footer {
-  /* background-color: var(--mainBlue); */
   background-image: linear-gradient(147deg, #4B4E53 0%, #000000 74%);
   text-align: center;
   width: 100%;
@@ -185,12 +201,17 @@ display: flex;
   height: 100vh;
   width: 100vw;
   display: flex;
+  justify-content: center;
 }
 .contact-input{
   display: block;
   padding: 10px;
   width: 200%;
   margin-top: 1em;
+}
+#contact-h2{
+  padding-top: 2em;
+
 }
 .email-me-h2{
   font-weight: bold;
@@ -215,6 +236,8 @@ button {
   /* display: block; */
   margin-top: 1em;
 }
+
+
 
 
 ul li {
