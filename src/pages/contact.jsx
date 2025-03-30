@@ -1,3 +1,16 @@
+import { Button } from '@material-tailwind/react'
+
+const Contact = () => {
+    return (
+        <main className="contact-background">
+            <h2 id="contact-h2">Why Not Team Up for an Awesome Project?</h2>
+            <h1 id="contact-h1">Feel free to contact me!</h1>
+            <a href="mailto:thoth1718@gmail.com">
+                <Button id="contact-button" fullWidth> Email Me </Button></a>
+            <p id="contact-text">Whether it is in the United States or internationally, I am excited to bring my enthusiasm, diligence, thirst for knowledge and development as a developer to your projects!</p>
+        </main>
+    )
+}
 // import { useState } from 'react'
 // import { Button } from '@material-tailwind/react'
 
