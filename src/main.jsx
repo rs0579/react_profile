@@ -4,7 +4,7 @@ import './index.css'
 import { ThemeProvider } from "@material-tailwind/react"
 import App from './App'
 import About from './pages/About'
-import Contact from './pages/Contact'
+import Contact from './pages/Contact.jsx'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
 import Error from './pages/Error'
