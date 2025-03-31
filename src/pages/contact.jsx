@@ -11,6 +11,7 @@ const Contact = () => {
         </main>
     )
 }
+export default Contact
 // import { useState } from 'react'
 // import { Button } from '@material-tailwind/react'
 

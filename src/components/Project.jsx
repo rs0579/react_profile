@@ -38,10 +38,10 @@ const Project = () => {
         },
         {
             id: "item-five",
-            link: "https://github.com/rs0579/frenchFootsteps",
+            link: "https://github.com/rs0579/order_system_python",
             imgSrc: imageFive,
             altText: "Module 5",
-            title: "French Footsteps"
+            title: "Order System Python"
 
         },
         {
@@ -71,7 +71,6 @@ const Project = () => {
                         <div className="overlay">
                             <h2>{project.title}</h2>
                         </div>
-                        {/* <h2 className="overlay">{project.title}</h2> */}
                     </button>
                 </section>
             ))}
