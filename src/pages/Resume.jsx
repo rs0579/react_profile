@@ -30,13 +30,13 @@ export default function Resume() {
                                 <img src="/assets/github.svg" className="w-20 mx-auto" />
                                 <p className="mt-4">GitHub</p>
                             </div>
-                            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-emerald-500">
-                                <img src="/assets/node-js.svg" className="w-20 mx-auto" />
-                                <p className="mt-4">Node JS</p>
-                            </div>
                             <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-sky-500">
                                 <img src="/assets/tailwind-css.svg" className="w-20 mx-auto" />
                                 <p className="mt-4">Tailwind</p>
+                            </div>
+                            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-emerald-500">
+                                <img src="/assets/node-js.svg" className="w-20 mx-auto" />
+                                <p className="mt-4">Node JS</p>
                             </div>
                             <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-cyan-500">
                                 <img src="/assets/typescript.svg" className="w-20 mx-auto" />
@@ -46,13 +46,17 @@ export default function Resume() {
                                 <img src="/assets/express.svg" className="w-20 mx-auto" />
                                 <p className="mt-4">Express JS</p>
                             </div>
-                            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-green-500">
-                                <img src="/assets/mongodb.svg" className="w-20 mx-auto" />
-                                <p className="mt-4">MongoDB</p>
-                            </div>
                             <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-gray-500">
                                 <img src="/assets/rest-api.svg" className="w-20 mx-auto" />
                                 <p className="mt-4">RESTful API</p>
+                            </div>
+                            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-purple-500">
+                                <img src="/assets/insomnia.svg" className="w-20 mx-auto" />
+                                <p className="mt-4">Insomnia</p>
+                            </div>
+                            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-green-500">
+                                <img src="/assets/mongodb.svg" className="w-20 mx-auto" />
+                                <p className="mt-4">MongoDB</p>
                             </div>
                             <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-pink-500">
                                 <img src="/assets/graphql.svg" className="w-20 mx-auto" />
@@ -73,6 +77,10 @@ export default function Resume() {
                             <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-amber-500">
                                 <img src="/assets/python.svg" className="w-20 mx-auto" />
                                 <p className="mt-4">Python</p>
+                            </div>
+                            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-teal-500">
+                                <img src="/assets/vite.svg" className="w-20 mx-auto" />
+                                <p className="mt-4">Vite</p>
                             </div>
                         </section>
                     </div>
