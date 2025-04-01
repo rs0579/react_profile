@@ -72,7 +72,10 @@ main {
 }
 #about-container{
   display: grid;
-  
+
+}
+#about-img{
+  padding-top: 2em;
 }
 .show{
   font-weight: bolder;

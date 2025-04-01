@@ -8,13 +8,14 @@ export default function About() {
             <img
                 className="h-96 w-96 rounded-full object-cover object-center"
                 src={selfImage}
-                alt="Castellfollit de la Roca" />
+                alt="Castellfollit de la Roca" 
+                id="about-img"/>
 
             <section className="about-section">
                 <p className="about-text" id="about-section-one">
                     <span className="show">Tech-Savvy Professional with Global Experience in EdTech, Logistics, and E-Commerce</span>
 
-                    <p><br />An American professional with a strong international footprint, I split my time between Paris, France, and Dallas, Texas, bringing a unique global perspective to the tech industry. Having lived and worked across France—including Paris, Cannes, Nantes, and Tours—I have developed deep cross-cultural experience in both the American and French markets. Fluent in French (near-native), Spanish, and Portuguese, I also have a strong command of Russian and Levantine Arabic, allowing me to collaborate effectively across diverse teams and global markets.</p>
+                    <p><br />An American professional with a strong international footprint, I split my time between Paris, France, and Dallas, Texas, bringing a unique global perspective to the tech industry. Having lived and worked across France—including Paris, Cannes, Nantes, and Tours—I have developed deep cross-cultural experience in both the American and French markets. <span className="show">Fluent in French (near-native), Spanish, and Portuguese, I also have a strong command of Russian and Levantine Arabic</span>, allowing me to collaborate effectively across diverse teams and global markets.</p>
 
                     My background spans higher education, where I worked with leading universities in both countries, as well as hands-on experience in logistics with a major American e-commerce company.<br /> This combination has fueled my passion for leveraging technology to drive innovation in <span className="show">EdTech, logistics technology, and e-commerce solutions.</span>
 

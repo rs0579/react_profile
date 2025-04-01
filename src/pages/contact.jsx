@@ -8,7 +8,7 @@ const Contact = () => {
                 <h1 className="text-rose-500" id="contact-h1">Feel free to contact me!</h1>
                 <a href="mailto:thoth1718@gmail.com">
                     <Button id="contact-button" ripple={true}>Email Me</Button></a>
-                <p className="w-80 ...  h-80 ..."id="contact-text">Whether it is in the United States or internationally, I am eager to contribute my passion, dedication, and drive for growth as a developer to your projects!</p>
+                <p className="w-80 ...  h-80 ... "id="contact-text">Whether it is in the United States or internationally, I am eager to contribute my passion, dedication, and drive for growth as a developer to your projects!</p>
             </section>
         </main>
     )
