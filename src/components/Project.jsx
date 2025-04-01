@@ -40,7 +40,7 @@ const Project = () => {
             id: "item-five",
             link: "https://github.com/rs0579/order_system_python",
             imgSrc: imageFive,
-            altText: "Module 5",
+            altText: "Module 21",
             title: "Order System Python"
 
         },
@@ -49,7 +49,7 @@ const Project = () => {
             link: "https://github.com/rs0579/social_media_api",
             // imgSrc: "https://picsum.photos/id/201/5000/3333",
             imgSrc: imageSix,
-            altText: "Module 6",
+            altText: "Social Media",
             title: 'Social Media API'
         }
     ];
