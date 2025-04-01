@@ -8,10 +8,6 @@
   --niceTeal: #5F9EA0;
   --warmBeige: #A89C94;
 }
-
-h2 {
-  color: aliceblue;
-}
 body{
   padding: 0;
   margin: 0;
@@ -73,6 +69,10 @@ main {
   padding: 15px;
   border: solid #ffd25f;
   color: black;
+}
+#about-container{
+  display: grid;
+  
 }
 .show{
   font-weight: bolder;
@@ -212,9 +212,28 @@ display: flex;
   width: 200%;
   margin-top: 1em;
 }
+#contact-container{
+  margin-top: 9em;
+}
 #contact-h2{
+  font-size: 2em;
+  /* padding-top: 2em; */
+}
+#contact-text{
+  color: #5a8486;
+  /* padding: 1em;
+  margin-left: 9em; */
+  margin: 0 auto;
   padding-top: 2em;
-
+}
+#contact-h1{
+  font-size: 1.75em;
+  color: #ffd25f;
+  padding: 1.5em;
+}
+#contact-button{
+  padding: 1em;
+  background-color: #9db787;
 }
 .email-me-h2{
   font-weight: bold;

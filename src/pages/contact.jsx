@@ -3,11 +3,13 @@ import { Button } from '@material-tailwind/react'
 const Contact = () => {
     return (
         <main className="contact-background">
-            <h2 id="contact-h2">Why Not Team Up for an Awesome Project?</h2>
-            <h1 id="contact-h1">Feel free to contact me!</h1>
-            <a href="mailto:thoth1718@gmail.com">
-                <Button id="contact-button" fullWidth> Email Me </Button></a>
-            <p id="contact-text">Whether it is in the United States or internationally, I am excited to bring my enthusiasm, diligence, thirst for knowledge and development as a developer to your projects!</p>
+            <section className='text-center' id='contact-container'>
+                <h2 className="text-indigo-500" id="contact-h2">Why Not Team Up for an Awesome Project?</h2>
+                <h1 className="text-rose-500" id="contact-h1">Feel free to contact me!</h1>
+                <a href="mailto:thoth1718@gmail.com">
+                    <Button id="contact-button" ripple={true}>Email Me</Button></a>
+                <p className="w-80 ...  h-80 ..."id="contact-text">Whether it is in the United States or internationally, I am eager to contribute my passion, dedication, and drive for growth as a developer to your projects!</p>
+            </section>
         </main>
     )
 }
