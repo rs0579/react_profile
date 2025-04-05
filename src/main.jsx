@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { ThemeProvider } from "@material-tailwind/react"
+// import { ThemeProvider } from "@material-tailwind/react"
 import App from './App'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ThemeProvider>
+  // <ThemeProvider>
     <RouterProvider router={router} />
-  </ThemeProvider>
+  // </ThemeProvider>
 )
